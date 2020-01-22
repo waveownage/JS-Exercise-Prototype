@@ -89,10 +89,8 @@ Car.prototype.fill = function(gallons) {
         + Should return a string "Playing with x", x being the favorite toy.
 */
 function Baby(name, age, favoriteToy) {
-
   Person.call(this,name,age);
-  this.favoriteToy = favoriteToy;
- 
+  this.favoriteToy = favoriteToy; 
 }
 Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.play = function(favoriteToy){
@@ -102,10 +100,10 @@ Baby.prototype.play = function(favoriteToy){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. "This" is the Window/Console object when in the global scope
+  2. The object to the left of the dot in dot notation is "this"
+  3. When doing a constructor function, this is the name of the parent function
+  4. This is explicitly defined when you use the call or apply method.
 */
 
 
